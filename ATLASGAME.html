@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-family: cursive;
+            font-weight: 50;
+            text-shadow: 1px 1px 2px red;
+            font-size: 50px;
+            color: blue;
+        }
+
+        input {
+            background-color: black;
+            width: 250px;
+            height: 40px;
+            color: white;
+            font-weight: bold;
+        }
+
+        #main {
+            background-color: black, gray;
+            height: 330px;
+            width: 420px;
+            position: relative;
+            top: 190px;
+            box-shadow: 2px 2px 3px blue;
+            border-radius: 40px;
+        }
+
+        body {
+            background-image: url('https://t3.ftcdn.net/jpg/02/89/89/60/360_F_289896093_bnIp6I66LeQuuHr5RymKubKsCDf0u4pL.jpg');
+            background-size: cover;
+        }
+
+        ::placeholder {
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        #search {
+            background-color: black;
+            color: greenyellow;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        h2 {
+            color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <div id="main">
+            <br>
+            <center>
+                <h1>ATLAS</h1>
+                <input type="text" id="firstletter" placeholder="Enter the first letter of any place">
+                <input type="number" id="noofplaces" placeholder="Enter the no of places">
+                <br><br>
+                <button id="search" onclick="atlas()">Search</button>
+                <h2 id="result"></h2>
+            </center>
+        </div>
+    </center>
+</body>
+<script>
+    function atlas() {
+        var x = document.getElementById('firstletter').value
+        var y = document.getElementById('noofplaces').value
+
+        if (x == "a" && y == 1 || x == "A") {
+            document.getElementById('result').innerHTML = 'America'
+        }
+        if (x == "a" && y == 2 || x == "A") {
+            document.getElementById('result').innerHTML = 'America' + ' Australia'
+        }
+        if (x == "a" && y == 3 || x == "A") {
+            document.getElementById('result').innerHTML = 'America' + ' Australia' + ' Africa'
+        }
+        if (x == "b" && y == 1 || x == "B") {
+            document.getElementById('result').innerHTML = 'Bhopal'
+        }
+        if (x == "b" && y == 2 || x == "B") {
+            document.getElementById('result').innerHTML = 'Banglore' + ' Bangkok'
+        }
+        if (x == "b" && y == 3 || x == "B") {
+            document.getElementById('result').innerHTML = 'Bhubneshwar' + ' Bhilai' + ' Being'
+        }
+        if (x == "c" && y == 1 || x == "C") {
+            document.getElementById('result').innerHTML = 'Chandrapur'
+        }
+        if (x == "c" && y == 2 || x == "C") {
+            document.getElementById('result').innerHTML = 'Chattisgarh' + ' Cape Town'
+        }
+        if (x == "c" && y == 3 || x == "C") {
+            document.getElementById('result').innerHTML = 'California' + ' Canada' + ' Chandigarh'
+        } if (x == "d" && y == 1 || x == "D") {
+            document.getElementById('result').innerHTML = 'Daman'
+        }
+        if (x == "d" && y == 2 || x == "D") {
+            document.getElementById('result').innerHTML = 'Dareeling' + ' Darasuram'
+        }
+        if (x == "d" && y == 3 || x == "D") {
+            document.getElementById('result').innerHTML = 'Dubai' + ' Dalahousie' + ' Dandeli'
+        }
+        if (x == "e" && y == 1 || x == "E") {
+            document.getElementById('result').innerHTML = 'Europe'
+        }
+        if (x == "e" && y == 2 || x == "E") {
+            document.getElementById('result').innerHTML = 'Egypt' + ' Ethopia'
+        }
+        if (x == "e" && y == 3 || x == "E") {
+            document.getElementById('result').innerHTML = 'Estonia' + ' Eritrea' + ' Ecuador'
+        }
+        if (x == "f" && y == 1 || x == "F") {
+            document.getElementById('result').innerHTML = 'Fatehpue Sikri'
+        }
+        if (x == "f" && y == 2 || x == "F") {
+            document.getElementById('result').innerHTML = 'Faridabad' + ' Fatehabad'
+        }
+        if (x == "f" && y == 3 || x == "F") {
+            document.getElementById('result').innerHTML = 'Faridkot' + ' Ferozepur' + ' Fagu'
+        }
+        if (x == "g" && y == 1 || x == "G") {
+            document.getElementById('result').innerHTML = 'Gantok'
+        }
+        if (x == "g" && y == 2 || x == "G") {
+            document.getElementById('result').innerHTML = 'Giziabad' + ' Gorakhpur'
+        }
+        if (x == "g" && y == 3 || x == "G") {
+            document.getElementById('result').innerHTML = 'Germany' + ' Goa' + ' Gurat'
+        }
+        if (x == "h" && y == 1 || x == "H") {
+            document.getElementById('result').innerHTML = 'Himachal'
+        }
+        if (x == "h" && y == 2 || x == "H") {
+            document.getElementById('result').innerHTML = 'Harayana' + ' Heydrabad'
+        }
+        if (x == "h" && y == 3 || x == "H") {
+            document.getElementById('result').innerHTML = 'Haridwar' + ' Hongkong' + ' Hisar'
+        }
+        if (x == "i" && y == 1 || x == "I") {
+            document.getElementById('result').innerHTML = 'India'
+        }
+        if (x == "i" && y == 2 || x == "I") {
+            document.getElementById('result').innerHTML = 'Isrel' + ' Iraq'
+        }
+        if (x == "i" && y == 3 || x == "I") {
+            document.getElementById('result').innerHTML = 'Indonesia' + ' Islamabad' + ' Itlay'
+        }
+        if (x == "j" && y == 1 || x == "J") {
+            document.getElementById('result').innerHTML = 'Janakpur'
+        }
+        if (x == "j" && y == 2 || x == "J") {
+            document.getElementById('result').innerHTML = 'Jaipur' + ' Jaisalmer'
+        }
+        if (x == "j" && y == 3 || x == "J") {
+            document.getElementById('result').innerHTML = 'Jalandhar' + ' Jabalpur' + ' Jagadhri'
+        }
+        if (x == "k" && y == 1 || x == "K") {
+            document.getElementById('result').innerHTML = 'Kolkata'
+        }
+        if (x == "k" && y == 2 || x == "K") {
+            document.getElementById('result').innerHTML = 'Kashmir' + ' Kota'
+        }
+        if (x == "k" && y == 3 || x == "K") {
+            document.getElementById('result').innerHTML = 'Karnataka' + ' Kollam' + ' Kanpur'
+        }
+        if (x == "l" && y == 1 || x == "L") {
+            document.getElementById('result').innerHTML = 'Lucknow'
+        }
+        if (x == "l" && y == 2 || x == "L") {
+            document.getElementById('result').innerHTML = 'Leh' + ' Ladak'
+        }
+        if (x == "l" && y == 3 || x == "L") {
+            document.getElementById('result').innerHTML = 'Lahore' + ' Lakshadweep' + ' London'
+        }
+        if (x == "m" && y == 1 || x == "M") {
+            document.getElementById('result').innerHTML = 'Mumbai'
+        }
+        if (x == "m" && y == 2 || x == "M") {
+            document.getElementById('result').innerHTML = 'Maharastra' + ' Meerut'
+        }
+        if (x == "m" && y == 3 || x == "M") {
+            document.getElementById('result').innerHTML = 'Moscoe' + ' Mexicow' + ' Madhurai'
+        }
+        if (x == "n" && y == 1 || x == "N") {
+            document.getElementById('result').innerHTML = 'Nanital'
+        }
+        if (x == "n" && y == 2 || x == "N") {
+            document.getElementById('result').innerHTML = 'Nagpur' + ' Nagercoil'
+        }
+        if (x == "n" && y == 3 || x == "N") {
+            document.getElementById('result').innerHTML = 'New York' + ' New Delhi' + ' Nashville'
+        }
+        if (x == "o" && y == 1 || x == "N") {
+            document.getElementById('result').innerHTML = 'Orissa'
+        }
+        if (x == "o" && y == 2 || x == "N") {
+            document.getElementById('result').innerHTML = 'Oakham' + ' Obzor'
+        }
+        if (x == "o" && y == 3 || x == "N") {
+            document.getElementById('result').innerHTML = 'Oaxaca' + ' Oban' + ' Oceania'
+        }
+        if (x == "p" && y == 1 || x == "P") {
+            document.getElementById('result').innerHTML = 'Punjab'
+        }
+        if (x == "p" && y == 2 || x == "P") {
+            document.getElementById('result').innerHTML = 'Patna' + ' Patlapuram'
+        }
+        if (x == "p" && y == 3 || x == "P") {
+            document.getElementById('result').innerHTML = 'Pune' + ' Patila' + ' Portland'
+        }
+        if (x == "q" && y == 1 || x == "Q") {
+            document.getElementById('result').innerHTML = 'Qatar'
+        }
+        if (x == "q" && y == 2 || x == "Q") {
+            document.getElementById('result').innerHTML = 'Queensland' + ' Qawra'
+        }
+        if (x == "q" && y == 3 || x == "Q") {
+            document.getElementById('result').innerHTML = 'Queenstown' + ' Quito' + ' Quebec'
+        }
+        if (x == "r" && y == 1 || x == "R") {
+            document.getElementById('result').innerHTML = 'Rajasthan'
+        }
+        if (x == "r" && y == 2 || x == "R") {
+            document.getElementById('result').innerHTML = 'Rajkot' + ' Raigarh'
+        }
+        if (x == "r" && y == 3 || x == "R") {
+            document.getElementById('result').innerHTML = 'Raipur' + ' Raison' + ' Raisen'
+        }
+        if (x == "s" && y == 1 || x == "S") {
+            document.getElementById('result').innerHTML = 'Srinagar'
+        }
+        if (x == "s" && y == 2 || x == "S") {
+            document.getElementById('result').innerHTML = 'Surat' + ' Sydney'
+        }
+        if (x == "s" && y == 3 || x == "S") {
+            document.getElementById('result').innerHTML = 'Santiago' + ' Shenzhen' + ' Soweto'
+        }
+        if (x == "t" && y == 1 || x == "T") {
+            document.getElementById('result').innerHTML = 'Telengana'
+        }
+        if (x == "t" && y == 2 || x == "T") {
+            document.getElementById('result').innerHTML = 'Tajpur' + ' Tapola'
+        }
+        if (x == "t" && y == 3 || x == "T") {
+            document.getElementById('result').innerHTML = 'Tawang' + ' Tarapith' + ' Talakadu'
+        }
+        if (x == "u" && y == 1 || x == "U") {
+            document.getElementById('result').innerHTML = 'Uttarpradesh'
+        }
+        if (x == "u" && y == 2 || x == "U") {
+            document.getElementById('result').innerHTML = 'Udaipur' + ' Unnao'
+        }
+        if (x == "u" && y == 3 || x == "U") {
+            document.getElementById('result').innerHTML = 'Udupi' + ' United KIngdom' + ' USA'
+        }
+        if (x == "v" && y == 1 || x == "V") {
+            document.getElementById('result').innerHTML = 'Vadodara'
+        }
+        if (x == "v" && y == 2 || x == "V") {
+            document.getElementById('result').innerHTML = 'Vishakapatnam' + ' Vellore'
+        }
+        if (x == "v" && y == 3 || x == "V") {
+            document.getElementById('result').innerHTML = 'Varacruz' + ' Veitnam' + ' Vidisha'
+        }
+        if (x == "w" && y == 1 || x == "W") {
+            document.getElementById('result').innerHTML = 'West Bnegal'
+        }
+        if (x == "w" && y == 2 || x == "W") {
+            document.getElementById('result').innerHTML = 'Wizac' + ' Washington'
+        }
+        if (x == "w" && y == 3 || x == "W") {
+            document.getElementById('result').innerHTML = 'Wokha' + ' Wayanad' + ' Wardah'
+        }
+        if (x == "x" && y == 1 || x == "X") {
+            document.getElementById('result').innerHTML = 'Xapuri'
+        }
+        if (x == "x" && y == 2 || x == "X") {
+            document.getElementById('result').innerHTML = 'Xanxra' + ' Xenia'
+        }
+        if (x == "x" && y == 3 || x == "X") {
+            document.getElementById('result').innerHTML = 'Xalapa' + ' Xanadu' + ' Xenophon'
+        }
+        if (x == "y" && y == 1 || x == "Y") {
+            document.getElementById('result').innerHTML = 'Yadgir'
+        }
+        if (x == "y" && y == 2 || x == "Y") {
+            document.getElementById('result').innerHTML = 'Yamuna Nagar' + ' Yanam'
+        }
+        if (x == "y" && y == 3 || x == "Y") {
+            document.getElementById('result').innerHTML = 'Yana' + ' Yellapur' + ' Yavatmal'
+        }
+        if (x == "z" && y == 1 || x == "Z") {
+            document.getElementById('result').innerHTML = 'Zinbawe'
+        }
+        if (x == "z" && y == 2 || x == "Z") {
+            document.getElementById('result').innerHTML = 'Zama' + ' Zuglo'
+        }
+        if (x == "z" && y == 3 || x == "Z") {
+            document.getElementById('result').innerHTML = 'Zahedan' + ' Zinder' + ' Zurich'
+        }
+    }
+</script>
+
+</html>
